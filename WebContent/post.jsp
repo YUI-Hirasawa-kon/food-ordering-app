@@ -106,7 +106,7 @@
         </div>
 
         <footer class="w3-container w3-center w3-padding-32 w3-light-grey w3-margin-top">
-            <p>Food Ordering System by Gemini &copy; Hong Kong</p>
+            <p>Food Ordering System</p>
         </footer>
     </body>
 </html>
