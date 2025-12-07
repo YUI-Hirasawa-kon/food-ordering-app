@@ -70,14 +70,14 @@
                         double itemPrice = 0.0;
 
                         switch (id) {
-                            case 1: itemPrice = 38.00; break;
-                            case 2: itemPrice = 45.00; break;
-                            case 3: itemPrice = 52.00; break;
-                            case 4: itemPrice = 40.00; break;
-                            case 5: itemPrice = 42.00; break;
-                            case 6: itemPrice = 48.00; break;
-                            case 7: itemPrice = 60.00; break;
-                            case 8: itemPrice = 35.00; break;
+                            case 1: itemPrice = 16.50; break;
+                            case 2: itemPrice = 15.50; break;
+                            case 3: itemPrice = 14.00; break;
+                            case 4: itemPrice = 23.50; break;
+                            case 5: itemPrice = 22.50; break;
+                            case 6: itemPrice = 25.00; break;
+                            case 7: itemPrice = 33.00; break;
+                            case 8: itemPrice = 20.00; break;
                             default: continue;
                         }
 

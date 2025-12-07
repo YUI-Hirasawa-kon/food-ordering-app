@@ -33,7 +33,7 @@
         </div>
 
         <footer class="w3-container w3-center w3-padding-32 w3-light-grey w3-bottom">
-            <p>Software Project by Gemini</p>
+            <p>Software Project</p>
         </footer>
 
     </body>

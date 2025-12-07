@@ -29,7 +29,7 @@
         <link rel="stylesheet" href="style.css" type="text/css">
 
         <style>
-            /* 修正后的自定义样式 - 仅保留必要的和活动链接样式 */
+
             .active-menu-link {
                 color: black !important;
                 padding:12px;
@@ -111,8 +111,8 @@
                         <div class="w3-card-4 w3-white">
                             <img src="Images/items/Classic Beef Burger.png" style="width:100%; height:240px; object-fit: cover;" alt="Classic Beef Burger">
                             <div class="w3-container w3-padding-16">
-                                <h4 class="w3-text-teal"><b>Classic Beef Burger</b></h4>
-                                <p>HKD 38</p>
+                                <h4 class="w3-text-teal"><b>Cheeseburger</b></h4>
+                                <p>HKD 16.50</p>
                                 <input class="w3-check w3-teal" type="checkbox" name="chk1" value="1" onchange="update_value(this);">
                                 <label class="w3-validate">Select</label>
                             </div>
@@ -123,8 +123,8 @@
                         <div class="w3-card-4 w3-white">
                             <img src="Images/items/Signature Chicken Burger.png" style="width:100%; height:240px; object-fit: cover;" alt="Signature Chicken Burger">
                             <div class="w3-container w3-padding-16">
-                                <h4 class="w3-text-teal"><b>Signature Chicken Burger</b></h4>
-                                <p>HKD 45</p>
+                                <h4 class="w3-text-teal"><b>Chicken Filet Burger</b></h4>
+                                <p>HKD 15.50</p>
                                 <input class="w3-check w3-teal" type="checkbox" name="chk1" value="2" onchange="update_value(this);">
                                 <label class="w3-validate">Select</label>
                             </div>
@@ -135,8 +135,8 @@
                         <div class="w3-card-4 w3-white">
                             <img src="Images/items/Spicy Fish Fillet Burger.png" style="width:100%; height:240px; object-fit: cover;" alt="Spicy Fish Fillet Burger">
                             <div class="w3-container w3-padding-16">
-                                <h4 class="w3-text-teal"><b>Spicy Fish Fillet Burger</b></h4>
-                                <p>HKD 52</p>
+                                <h4 class="w3-text-teal"><b>Fish Fillet Burger</b></h4>
+                                <p>HKD 14.00</p>
                                 <input class="w3-check w3-teal" type="checkbox" name="chk1" value="3" onchange="update_value(this);">
                                 <label class="w3-validate">Select</label>
                             </div>
@@ -148,7 +148,7 @@
                             <img src="Images/items/Double Cheeseburger.png" style="width:100%; height:240px; object-fit: cover;" alt="Double Cheeseburger">
                             <div class="w3-container w3-padding-16">
                                 <h4 class="w3-text-teal"><b>Double Cheeseburger</b></h4>
-                                <p>HKD 40</p>
+                                <p>HKD 23.50</p>
                                 <input class="w3-check w3-teal" type="checkbox" name="chk1" value="4" onchange="update_value(this);">
                                 <label class="w3-validate">Select</label>
                             </div>
@@ -161,8 +161,8 @@
                         <div class="w3-card-4 w3-white">
                             <img src="Images/items/McPork Burger.png" style="width:100%; height:240px; object-fit: cover;" alt="McPork Burger">
                             <div class="w3-container w3-padding-16">
-                                <h4 class="w3-text-teal"><b>McPork Burger</b></h4>
-                                <p>HKD 42</p>
+                                <h4 class="w3-text-teal"><b>Sausage McMuffin with Egg Burger</b></h4>
+                                <p>HKD 22.50</p>
                                 <input class="w3-check w3-teal" type="checkbox" name="chk1" value="5" onchange="update_value(this);">
                                 <label class="w3-validate">Select</label>
                             </div>
@@ -173,8 +173,8 @@
                         <div class="w3-card-4 w3-white">
                             <img src="Images/items/Big Mac Style Burger.png" style="width:100%; height:240px; object-fit: cover;" alt="Big Mac Style Burger">
                             <div class="w3-container w3-padding-16">
-                                <h4 class="w3-text-teal"><b>Big Mac Style Burger</b></h4>
-                                <p>HKD 48</p>
+                                <h4 class="w3-text-teal"><b>Big Mac Burger</b></h4>
+                                <p>HKD 25.00</p>
                                 <input class="w3-check w3-teal" type="checkbox" name="chk1" value="6" onchange="update_value(this);">
                                 <label class="w3-validate">Select</label>
                             </div>
@@ -185,8 +185,8 @@
                         <div class="w3-card-4 w3-white">
                             <img src="Images/items/Premium Truffle Burger.png" style="width:100%; height:240px; object-fit: cover;" alt="Premium Truffle Burger">
                             <div class="w3-container w3-padding-16">
-                                <h4 class="w3-text-teal"><b>Premium Truffle Burger</b></h4>
-                                <p>HKD 60</p>
+                                <h4 class="w3-text-teal"><b>Cheesy Champignon Angus Burger</b></h4>
+                                <p>HKD 33.00</p>
                                 <input class="w3-check w3-teal" type="checkbox" name="chk1" value="7" onchange="update_value(this);">
                                 <label class="w3-validate">Select</label>
                             </div>
@@ -201,7 +201,7 @@
                             <img src="Images/items/Small Fries & Soft Drink Set.png" style="width:100%; height:240px; object-fit: cover;" alt="Small Fries & Soft Drink Set">
                             <div class="w3-container w3-padding-16">
                                 <h4 class="w3-text-teal"><b>Small Fries & Soft Drink Set</b></h4>
-                                <p>HKD 35</p>
+                                <p>HKD 20.00</p>
                                 <input class="w3-check w3-teal" type="checkbox" name="chk1" value="8" onchange="update_value(this);">
                                 <label class="w3-validate">Select</label>
                             </div>
