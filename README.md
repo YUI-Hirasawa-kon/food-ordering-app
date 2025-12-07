@@ -9,7 +9,3 @@
  2. MySQL
  3. Apache Tomcat
  4. Source `sql-queries.sql` file on your local MySQL
-
-**Contribution**
-
-This project is open for contribution.
