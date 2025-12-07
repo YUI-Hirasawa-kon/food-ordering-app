@@ -1,6 +1,6 @@
 # **Food Ordering App**
 **How to deploy on your local**
- 1. Open in Netbeans/Eclipse
+ 1. Open in Netbeans/IDEA
  2. Click `Clean and Build`
  3. Click on `Run or Debug`
 
