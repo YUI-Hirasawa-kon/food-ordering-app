@@ -23,6 +23,7 @@ public class MinPath {
                 ps.executeUpdate();
             }
             return true;
+
         } catch (Exception e) {
             return false;
         } finally {

@@ -10,6 +10,7 @@ public class MenuItems {
 	{
 		this.price = price;
 		this.item_name = item_name;
+
 		
 	}
 	

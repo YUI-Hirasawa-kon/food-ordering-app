@@ -3,7 +3,6 @@
 <%@page import="java.util.ArrayList"%>
 <%@page import="java.text.DecimalFormat"%>
 <%
-    // Session Expired 页面 - 保持不变
     if ((session.getAttribute("userid") == null) || (session.getAttribute("userid") == "")) {
 %>
 <!DOCTYPE html>
@@ -23,28 +22,21 @@
     </body>
 </html>
 <%} else {
-    // 实例化 MinPath Bean (尽管我们不再调用其 addItemToOrder 方法)
-    // jsp:useBean id="test" class="Demo.MinPath" 在下面 HTML 部分定义
+
     DecimalFormat df = new DecimalFormat("#.00");
     double total = 0.0;
 
-    // 获取用户在 success.jsp 中选择的菜单项ID
     String[] items = request.getParameterValues("chk1");
 
-    // 如果没有选择任何项目，重定向回菜单页
     if (items == null || items.length == 0) {
         response.sendRedirect("success.jsp");
         return;
     }
 
-    // 修复 1: 存储 items 数组到 Session，供 post.jsp 使用。
-    // 这取代了报错的 path.addItemToOrder(session, itemId) 方法。
     session.setAttribute("selected_items_ids", items);
 
-    // 修复 2: 改用 String[] 数组存储项目名称和价格，以避免 MenuItems 的方法调用错误
     ArrayList<String[]> selectedItems = new ArrayList<>();
 
-    // 假设菜单映射
     // 1: Classic Beef Burger, HKD 38.00
     // ...
     // 9: Small Fries & Soft Drink Set, HKD 35.00
@@ -54,7 +46,6 @@
         String itemName = "";
         double itemPrice = 0.0;
 
-        // --- 菜单本土化和价格更新 ---
         switch (id) {
             case 1: itemName = "Classic Beef Burger"; itemPrice = 38.00; break;
             case 2: itemName = "Signature Chicken Burger"; itemPrice = 45.00; break;
@@ -67,11 +58,9 @@
             default: continue;
         }
 
-        // 累加总价
         total += itemPrice;
 
-        // 修复 3: 不再使用 MenuItems 对象，而是使用 String[] 存储数据
-        // index 0: Item Name, index 1: Formatted Price
+
         String[] itemData = {itemName, df.format(itemPrice)};
         selectedItems.add(itemData);
     }
@@ -82,7 +71,6 @@
         <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
         <link rel="stylesheet" href="w3.css" type="text/css">
         <style>
-            /* 保持 active 导航样式 */
             .active-menu-link {
                 color: black !important;
                 padding:12px;
@@ -94,7 +82,6 @@
         </style>
         <script>
             function toggleFunction() {
-                // 用于响应式菜单，目前保持为空
             }
         </script>
     </head>
@@ -127,7 +114,6 @@
 
                     <%
                     int count = 1;
-                    // 修复 4: 更改循环变量类型并使用数组索引获取数据
                     for (String[] itemData : selectedItems) {
                     %>
                     <tr>

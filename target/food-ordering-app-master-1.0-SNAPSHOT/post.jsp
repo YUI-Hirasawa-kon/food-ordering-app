@@ -65,13 +65,10 @@
                 <%
                     String uid = session.getAttribute("userid").toString();
 
-                    // 循环遍历所有选定的项目，计算总价并调用 insert_history 记录到数据库
                     for (String itemId : items) {
-                        // 注意: id 变量只用于价格计算，不会传递给 insert_history
                         int id = Integer.parseInt(itemId);
                         double itemPrice = 0.0;
 
-                        // --- 菜单价格映射 (与 order.jsp 保持一致) ---
                         switch (id) {
                             case 1: itemPrice = 38.00; break;
                             case 2: itemPrice = 45.00; break;
@@ -84,14 +81,11 @@
                             default: continue;
                         }
 
-                        // 累加总价 (用于显示)
                         total += itemPrice;
 
-                        // 修复: 再次尝试 MinPath 方法调用，传入用户ID (String) 和项目ID (String)
                         test.insert_history(uid, itemId);
                     }
 
-                    // 清除 Session 中的购物车信息
                     session.removeAttribute("selected_items_ids");
                 %>
 
