@@ -1,7 +1,7 @@
 <%@page import="Demo.MinPath"%>
 <%@page import="java.text.DecimalFormat"%>
 <%
-    // Session Expired 页面 - 保持不变
+
     if ((session.getAttribute("userid") == null) || (session.getAttribute("userid") == "")) {
 %>
 <!DOCTYPE html>
@@ -21,21 +21,20 @@
     </body>
 </html>
 <%} else {
-    // 获取订单详情
+
     String address = request.getParameter("address");
     String payment = request.getParameter("payment");
-    String notes = request.getParameter("notes"); // 备注信息，仅用于显示/日志
+    String notes = request.getParameter("notes");
 
-    // 从 Session 获取订单项目ID数组
+
     String[] items = (String[])session.getAttribute("selected_items_ids");
 
-    // 确保 items 不为空，否则重定向
     if (items == null || items.length == 0) {
         response.sendRedirect("success.jsp");
         return;
     }
 
-    // 初始化变量和格式化工具
+
     DecimalFormat df = new DecimalFormat("#.00");
     double total = 0.0;
 %>
